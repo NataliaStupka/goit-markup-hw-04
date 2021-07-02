@@ -48,6 +48,19 @@ img {
   padding-right: 15px;
 }
 
+.visually-hidden {
+    position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 /* возможно, поменять цвет текста */
 body {
   font-family: 'Roboto', sans-serif;
@@ -280,6 +293,7 @@ body {
   text-transform: uppercase;
 }
 
+
 .dignity-text {
   color: var(--primery-text-color);
   font-weight: 400;
@@ -461,6 +475,13 @@ fill: var(--accent-color);
   padding-bottom: 60px;
   background-color: var(--background-footer-hero);
 }
+.footer-address-social {
+  display: flex;
+  align-items: baseline;
+  
+
+}
+
 .logo-footer {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -474,6 +495,7 @@ fill: var(--accent-color);
 }
 .footer-contact {
   margin-top: 20px;
+  margin-right: 70px;
 }
 
 .footer-item {
@@ -481,6 +503,7 @@ fill: var(--accent-color);
 }
 
 .footer-address {
+  
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -522,6 +545,46 @@ fill: var(--accent-color);
   color: #ffffff;
 }
 
+/* ПРИСОЕДЕНЯЙТЕСЬ */
+.social-footer {
+  width: 206px;
+}
+
+.social-footer-title {
+  margin-bottom: 20px;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+.social-footer-list {
+  display: flex;
+  justify-content: space-between;
+
+}
+.social-footer-link {
+  fill: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);;
+}
+.social-footer-link:hover,
+.social-footer-link:focus {
+fill: var(--white-color);
+background-color: var(--accent-color);
+}
+
+.social-footer-icon {
+  width: 20px;
+  height: 20px;
 /* ========== END FOOTER ========== */
 
 /* ------- PAGE PORTFOLIO ------- */
