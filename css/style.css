@@ -150,13 +150,13 @@ body {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  fill: var(--primery-text-color);
+  fill: currentColor;
 }
 .contact-tel-icon {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  fill: var(--primery-text-color);
+  fill: currentColor;
 }
 
 .contact-mail,
@@ -287,8 +287,20 @@ body {
   flex-basis: calc((100% - 120px) / 4);
 }
 
-.dignity-description {
+.dignity-icon-conteiner {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+
   width: 270px;
+  height: 120px;
+  background: var(--background-button-secondary);
+  border-radius: 4px;
+}
+.dignity-icon {
+  margin: 0 auto;
+  width: 70px;
+  height: 70px;
 }
 
 .dignity-title {
