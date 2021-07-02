@@ -5,6 +5,7 @@
   --accent-color: #2196f3;
   --white-color: #ffffff;
   --background-footer-hero: #2f303a;
+  --icon-color: #AFB1B8;
 }
 
 /* --- Сброс --- */
@@ -128,9 +129,13 @@ body {
   /* margin-left: auto; - как вариант, если убрать justify-content: space-between */
 }
 
+
+
 .contact-item:not(:last-child) {
   margin-right: 50px;
 }
+
+
 
 .contact-mail,
 .contact-tel {
@@ -206,8 +211,18 @@ body {
 /* ========== MAIN ========== */
 
 .hero {
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
-  padding-bottom: 200px;
+  padding-bottom: 200px; 
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url('../imeges/hero/bg.jpg');
+  background-repeat: no-repeat;
+ background-position: center;
+ 
   background-color: var(--background-footer-hero);
   text-align: center;
 }
@@ -340,6 +355,8 @@ body {
 .team-badge {
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .team-name {
@@ -354,6 +371,7 @@ body {
 }
 
 .team-profession {
+  margin-bottom: 16px;
   color: var(--primery-text-color);
   font-weight: 400;
   font-size: 16px;
@@ -361,7 +379,81 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+
+}
+.social-list-link {
+  fill: var(--icon-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+.social-list-link:hover,
+.social-list-link:focus {
+fill: var(--white-color);
+background-color: var(--accent-color);
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+}
 /* ========== END TEAM ========== */
+
+/* ========== CLIENTS ========== */
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-title {
+  margin-bottom: 50px;
+
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--title-text-color);
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-link {
+fill: var(--icon-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 170px;
+  height: 92px;
+ border: 1px solid #AFB1B8;
+border-radius: 4px;
+}
+
+
+.clients-link:hover,
+.clients-link:focus {
+border: 1px solid #2196F3;
+border-radius: 4px;
+fill: var(--accent-color);
+}
+
+
+
+/* ========== END CLIENTS ========== */
 
 /* ========== FOOTER ========== */
 .footer {
