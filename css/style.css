@@ -146,8 +146,23 @@ body {
   margin-right: 50px;
 }
 
+.contact-mail-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--primery-text-color);
+}
+.contact-tel-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--primery-text-color);
+}
+
 .contact-mail,
 .contact-tel {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
